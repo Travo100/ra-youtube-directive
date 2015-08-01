@@ -1,8 +1,8 @@
 (function() {
   angular.module('ra-youtube')
-  .directive('raYoutubeDirective', raYoutubeDirective);
+  .directive('raYoutubeLightbox', raYoutubeLightbox);
 
-  function raYoutubeDirective() {
+  function raYoutubeLightbox() {
     var directive = {
       templateUrl: 'youtube-template.html',
       restrict: 'E',
@@ -29,7 +29,7 @@
 
     vm.playerVars = {
       controls: 1,
-      autoplay: 1,
+      autoplay: 0,
       modestBranding: 0
     };
 
