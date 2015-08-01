@@ -1,0 +1,1 @@
+angular.module("ra-youtube").run(["$templateCache", function($templateCache) {$templateCache.put("youtube-template.html","<div class=\"ra-youtube-container\">\r\n  <span ng-bind=\"youtubeCtrl.videoId\"></span>\r\n</div>");}]);
