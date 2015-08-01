@@ -1,4 +1,4 @@
 (function(){
   angular
-    .module('ra-youtube', []);
+    .module('ra-youtube', ['youtube-embed']);
 })();

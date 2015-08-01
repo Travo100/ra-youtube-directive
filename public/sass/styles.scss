@@ -13,32 +13,8 @@ h2 {
   letter-spacing: 0.75px;
 }
 
-input {
-  color: #000;
-  width: 100%;
-  font-weight: 400;
-}
-
-form {
-  &.ng-submitted {
-    input.ng-invalid {
-      background: pink;
-    }
-    input.ng-valid, input.smarty-valid {
-      background: lightgreen;
-    }
-  }
-}
-input {
-  &.smarty-valid.ng-dirty, &.ng-valid.ng-dirty {
-    background: lightgreen;
-  }
-
-  &.smarty-invalid.ng-touched , &.ng-invalid.ng-touched {
-    background: pink;
-  }
-
-  &.smarty-pristine, &.ng-pristine, &.ng-untouched {
-    background: white;
-  }
+.ra-youtube-container .btn.btn-default {
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
 }

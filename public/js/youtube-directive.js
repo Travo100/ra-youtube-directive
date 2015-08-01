@@ -5,11 +5,13 @@
   function raYoutubeDirective() {
     var directive = {
       templateUrl: 'youtube-template.html',
-      restrict: 'EA',
+      restrict: 'E',
       controller: youtubeController,
       scope: {
         videoId : "@",
-        clickMe : "&"
+        value : "@",
+        raClass : "@",
+        raId : "@"
       },
 
       controllerAs: 'youtubeCtrl',
@@ -21,24 +23,23 @@
 
   function youtubeController() {
     var vm = this;
-    vm.message = "Yup";
-    vm.showModal = false;
-    //vm.videoId = "";
-    vm.revealModel = revealModel;
-    vm.closeModel = closeModel;
-    vm.clickMe = clickMe;
+    vm.showVideo = false;
+    vm.playVideo = playVideo;
+    vm.stopVideo = stopVideo;
 
-    function revealModel(videoId) {
-      console.log(videoId);
-      vm.revealModel = true;
+    vm.playerVars = {
+      controls: 1,
+      autoplay: 1,
+      modestBranding: 0
+    };
+
+    function playVideo() {
+      vm.showVideo= true;
     }
 
-    function closeModel() {
-      vm.revealModel = false;
+    function stopVideo() {
+      vm.showVideo = false;
     }
 
-    function clickMe() {
-      console.log('clicked');
-    }
   }
 }());

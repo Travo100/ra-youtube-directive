@@ -23,12 +23,13 @@
         <section>
             <div class="container">
               <h2 ng-bind="main.message"></h2>
-              <button>Press Me</button>
-              <ra-youtube-directive video-id="0N_RO-jL-90" ng-click="main.clickMe()"></ra-youtube-directive>
+              <ra-youtube-directive video-id="0N_RO-jL-90" value="Play Video!" ra-class="btn btn-default" ra-id="some-id"></ra-youtube-directive>
             </div>
         </section>
 
         <script src="angular.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="angular-youtube-embed.js"></script>
         <script src="assets/ra-youtube.min.js"></script>
         <script src="test-app.js"></script>
     </body>
