@@ -5,8 +5,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
-  padding-top: 10%;
-  transition: all 0.2s ease-in-out; }
+  padding-top: 10%; }
   .ra-modal-overlay:hover {
     cursor: pointer; }
   .ra-modal-overlay .ra-close {
