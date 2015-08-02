@@ -1,6 +1,7 @@
 <div class="ra-youtube-container">
-  <button ng-bind="youtubeCtrl.value" ng-click="youtubeCtrl.playVideo()" id="{{youtubeCtrl.raId}}" class="{{youtubeCtrl.raClass}}"></button>
-  <div class="modal-overlay" ng-if="youtubeCtrl.showVideo" ng-click="youtubeCtrl.stopVideo()">
+  <div ng-bind="youtubeCtrl.raText" ng-click="youtubeCtrl.playVideo()" id="{{youtubeCtrl.raId}}" class="{{youtubeCtrl.raClass}}"></div>
+  <div class="ra-modal-overlay" ng-if="youtubeCtrl.showVideo" ng-click="youtubeCtrl.stopVideo()">
+    <div class="ra-close">X</div>
     <div class="embed-responsive embed-responsive-16by9">
       <youtube-video class="embed-responsive-item" video-id="youtubeCtrl.videoId" player-vars="youtubeCtrl.playerVars"></youtube-video>
     </div>

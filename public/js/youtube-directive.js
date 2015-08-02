@@ -9,24 +9,21 @@
       controller: youtubeController,
       scope: {
         videoId : "@",
-        value : "@",
+        raText : "@",
         raClass : "@",
         raId : "@"
       },
-
       controllerAs: 'youtubeCtrl',
-      bindToController: true,
-      transclude: true
+      bindToController: true
     };
     return directive;
   }
 
   function youtubeController() {
     var vm = this;
-    vm.showVideo = false;
     vm.playVideo = playVideo;
     vm.stopVideo = stopVideo;
-
+    vm.showVideo = false;
     vm.playerVars = {
       controls: 1,
       autoplay: 0,
@@ -34,7 +31,7 @@
     };
 
     function playVideo() {
-      vm.showVideo= true;
+      vm.showVideo = true;
     }
 
     function stopVideo() {
