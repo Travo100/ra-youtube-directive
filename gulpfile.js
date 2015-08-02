@@ -45,7 +45,7 @@ gulp.task('nodemon', function () {
 
 gulp.task('style', function(){
   return gulp
-    .src('./public/css/*.css')
+    .src('./public/css/ra-youtube.css')
     .pipe(minifyCSS())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./public/assets/'));
